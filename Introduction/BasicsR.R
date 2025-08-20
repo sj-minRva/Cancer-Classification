@@ -8,4 +8,4 @@ glimpse(mpg)
 
 
 mpg_efficient <- filter(mpg, cty>=20)
-
+view(mpg_efficient)
