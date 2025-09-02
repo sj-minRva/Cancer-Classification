@@ -1,11 +1,7 @@
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
+
 BiocManager::install("TCGAbiolinks")
-BiocManager::install("SummarizedExperiment")
-BiocManager::install("AnnotationDbi")
-BiocManager::install("org.Hs.eg.db")
+a
 
 library(TCGAbiolinks)
-library(SummarizedExperiment)
-library(dplyr)
-library(AnnotationDbi)
