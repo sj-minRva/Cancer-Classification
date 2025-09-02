@@ -1,7 +1,4 @@
-if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-
-BiocManager::install("TCGAbiolinks")
-a
-
-library(TCGAbiolinks)
+query <- GDCquery(
+  project = "TCGA-BRCA", 
+  data.category = "Clinical"
+)
