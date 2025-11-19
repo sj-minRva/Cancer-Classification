@@ -1,3 +1,7 @@
-BiocManager::install(
-  "waldronlab/MultiAssayWorkshop", dependencies=TRUE, build_vignettes=TRUE
-)
+if (!require("BiocManager"))install.packages("BiocManager")
+BiocManager::install("MultiAssayExperiment")
+
+library(MultiAssayExperiment)
+library(GenomicRanges)
+library(SummarizedExperiment)
+library(RaggedExperiment)
